@@ -1,0 +1,59 @@
+body{
+	font-family: sans-serif;
+	margin: 8px;
+}
+
+/* Start: Réglages des div */
+.content{
+	margin: 0 auto;
+	width: 960px;
+}
+.shop-header{
+	border-left: 1px solid #000000;
+	border-radius: 16px 16px 0 0;
+	border-right: 1px solid #000000;
+	border-top: 1px solid #000000;
+	height: 144px;
+	padding: 8px 8px 0;
+}
+.shop-left-side, .shop-right-side, .shop-section{
+	display: block;
+	float: left;
+	overflow: hidden;
+}
+.shop-left-side, .shop-right-side{
+	width: 20%;
+}
+.shop-section{
+	width: 60%;	
+}
+.shop-footer{
+	height: 96px;
+}
+#logo-header{
+	float: left;
+	width: 256px;
+	height: 128px;
+}
+#widget{
+	float: right;
+	width: 256px;
+}
+#language-selector{
+	height: 32px;
+	text-align: right;
+	width: 256px;
+}
+#customer-zone, #search-zone{
+	width: 256px;
+	height: 40px;
+}
+.btn-100-pc{
+	width: 100%
+}
+.input-search{
+	height: 32px;
+	width: 207px;
+}
+
+/* End: Réglages des div */

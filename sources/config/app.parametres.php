@@ -4,4 +4,13 @@
 	$db_connexion_error .=' Connexion &agrave; la base de donn&eacute;es impossible</h1>';
 
 	$titre_application = "Wild Rider";
+
+	// Développeur
+	$developper1 = "Sarah" ;
+	$developper2 = "Armand";
+	$developper3 = "Jean-Claude";
+	$developper4 = "Stephan";
+
+	$copy        = "&copy; 2014";
+	$version     = "1.00.000 &beta;"
 ?>
