@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+	Modèle -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <link rel="stylesheet" href="sources/css/reset.css">
+        <link rel="stylesheet" href="sources/css/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="sources/css/bootstrap/css/bootstrap-responsive.css">
+        <link rel="stylesheet" href="sources/css/stylesheet.css">
+        <link rel="stylesheet" href="sources/css/animate.css">
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+        <script src="sources/jquery.js"></script>
+        <title>Backend WILDRIDER</title>
+    </head>
+ 
+    <body>
+      
+            <?php require('apps/header.php'); ?>
+   
+        <div id="menu" class="flip">
+            <?php require('apps/menu.php'); ?>
+        </div>
+        <div id="content">
+            <?php require('apps/'.$page.'.php'); ?>
+        </div>
+        <div id="footer">
+            <?php require('apps/footer.php'); ?>
+        </div>
+    </body>
+    <script src="sources/js/backend.js"></script>
+</html>
+
