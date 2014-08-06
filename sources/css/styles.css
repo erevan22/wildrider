@@ -1,0 +1,71 @@
+body{
+	font-family: sans-serif;
+	margin: 8px;
+}
+
+/* Start: Réglages des div */
+.content{
+	border: 1px solid #000000;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+	border-radius: 16px 16px 0 0;
+	margin: 0 auto;
+	width: 960px;
+}
+.shop-header{
+	height: 144px;
+	padding: 8px 8px 0;
+}
+.shop-left-side, .shop-right-side, .shop-section{
+	display: block;
+	float: left;
+	overflow: hidden;
+}
+.shop-left-side, .shop-right-side{
+	width: 20%;
+}
+.shop-left-side{
+}
+.shop-right-side{
+}
+.shop-section{
+	width: 60%;	
+}
+.shop-footer{
+	height: 96px;
+}
+#logo-header{
+	float: left;
+	width: 256px;
+	height: 128px;
+}
+#widget{
+	float: right;
+	width: 256px;
+}
+#language-selector{
+	height: 32px;
+	text-align: right;
+	width: 256px;
+}
+#customer-zone, #search-zone{
+	width: 256px;
+	height: 40px;
+}
+.btn-100-pc{
+	width: 100%
+}
+.input-search{
+	height: 32px;
+	width: 207px;
+}
+#customer-area, #left-menu, #cms-area, #aside-area, #promotion{
+	margin: 0 auto 8px;
+	min-width: 160px;
+	width: 90%;
+}
+.advertising{
+	height: 240px;
+	width: 120px;
+}
+
+/* End: Réglages des div */

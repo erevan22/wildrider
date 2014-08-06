@@ -1,0 +1,42 @@
+<?php 
+	// En-tête document HTML
+	require("app/document.header.php");
+?>
+
+<!-- Ossature de la boutique -->
+<div class="row-fluid">
+	<header>
+		<div id="boutique-header" class="span12 shop-header">
+		<div id="logo-header"><?php require("app/app.logo.php"); ?></div>
+		
+		<div id="widget">
+			<div id="language-selector"><?php require("app/app.language.selector.php"); ?></div>
+			<div id="customer-zone"><?php require("app/app.customer.area.php"); ?></div>
+			<div id="search-zone"><?php require("app/app.search.php") ?></div>
+		</div>
+
+		</div>
+	</header>
+	<nav>
+		<div class="span3 shop-left-side">
+			<?php require("app/client/app.bloc-client.php"); ?>
+			<?php require("app/app.bloc-navigation.php"); ?>
+			<?php require("app/cms/app.bloc-cms.php"); ?>
+		</div>
+	</nav>
+	<section>
+		<div class="span6 shop-section">require("section")</div>
+	</section>
+	<aside>
+		<div class="span3 shop-right-side"><?php require("app/app.bloc-aside.php"); ?></div>
+	</aside>
+</div>
+<div class="row-fluid">
+	<footer>
+		<div class="span12 shop-footer"><?php require("app/app.footer.php") ?></div>
+	</footer>
+</div>
+<?php
+	//Pied document HTML
+	require("app/document.footer.php");
+?>
