@@ -1,0 +1,38 @@
+<!-- Titre de la page -->
+<?php require('apps/header.php'); ?>
+
+<!-- Ossature du Back end -->
+<div class="row-fluid">
+
+         <!-- Menu nav Bootstrap -->
+        <div id="menu">
+            <?php require('apps/menu.php'); ?>
+        </div>
+
+        <!-- Compteurs -->
+        <div id="compteurs">
+            <?php require('apps/compteurs.php'); ?>
+        </div>
+
+        <!-- Content général -->
+        <div id="content">
+            <?php require('apps/'.$page.'.php'); ?>
+        </div>
+
+</div>
+
+</div>
+
+<div class="row-fluid">
+        <!-- Footer -->
+        <div id="footer">
+            <?php require('apps/footer.php'); ?>
+        </div>
+</div>
+        <script src="sources/js/backend.js"></script>
+    
+</body>
+    
+
+</html>
+

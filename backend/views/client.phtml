@@ -1,0 +1,37 @@
+	<div id="clients">  <!-- Clients -->
+		<table class="table" width="100%">
+  		<tr>
+		    <th>Nom</th>
+    		<th>Prénom</th>
+    		<th>Login</th>
+    		<th>Téléphone</th>
+    		<th>Email</th>
+  		</tr>
+		<?php
+			$i=0;
+			while (isset($clients[$i]))
+			{?>
+			   <tr>
+
+    			<td><?php echo $clients[$i]['nom']?></td>
+    			<td><?php echo $clients[$i]['prenom']?></td>
+    			<td><?php echo $clients[$i]['login']?></td>
+    			<td><?php echo $clients[$i]['telephone']?></td>
+    			<td><?php echo $clients[$i]['email']?></td>
+    			</tr>
+			<?php
+			$i++;
+			}
+		?>
+		</table>
+	
+		<form action='backend.php?page=crclient' method='post'>
+	                   
+		<input id="creerClient" type="submit" class="btn pull-right" value="Cr&eacute;er client" name="creat_clt">
+		</form>
+
+	</div>
+
+
+
+	

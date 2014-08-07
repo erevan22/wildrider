@@ -6,7 +6,7 @@
 	*/
 
 	/* Récupération du fichier paramètres */
-	require("app.parametres.php");
+	require("app.parametresbe.php");
 
 	/* Connexion base de données */
 	$db_name       = "wildrider";

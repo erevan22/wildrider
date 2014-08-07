@@ -1,0 +1,78 @@
+/**{
+	border:1px dashed blue;
+}*/
+body{
+	margin: 0;
+	
+}
+#h1_header{
+	margin-top: 0px;
+	text-align: center;
+	color:white;
+	font-size: 350%;
+	font-family: 'Ewert', sans-serif;
+	background: url(../images/bg_body2.png);
+	margin-bottom: 0px;
+	
+}
+
+#menu{
+	margin-top: 0px;
+}
+#compteurs{
+	z-index: 9;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	box-shadow: 1px 1px 15px black;
+	height:80px;
+	width:100%;
+	background-color: #87BDBF;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	font-family: 'Ubuntu', sans-serif;
+	text-align: left;
+}
+	
+#content{
+	width:960px;
+	height:100%;
+}
+
+
+#accueil{
+	margin-top: 40px;
+	font-size: 30px;
+	text-align: center;
+
+}
+
+#accueil img {
+	border-radius: 20%
+}
+
+#accueil img{
+	width: 400px;
+	height: 400px;
+}
+
+.listclt{
+	width: auto;
+	height: 300px;
+	border: solid 1px #ccc;
+}
+
+label{
+	display: block;
+	width: 150px;
+	float: left;
+	color: white;
+}
+
+#quitter{
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+#creerClient{
+	display:none;
+}
