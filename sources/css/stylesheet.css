@@ -2,18 +2,10 @@
 	border:1px dashed blue;
 }*/
 body{
-	margin: 0;
-	background: url(../images/bg_body2.png)
-}
-#h1_header{
-	margin-top: 1%;
-	margin-bottom: 1%;
-	text-align: center;
-	color:white;
-	font-size: 350%;
-	font-family: 'Ewert', sans-serif;
+	margin: 0 auto;
 	
 }
+
 #header{
 	z-index: 9;
 	border-top:1px solid #ccc;
@@ -24,10 +16,21 @@ body{
 	background:url(../images/bg_body2.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
+
+}
+
+#compteurs{
+	margin-bottom: 1%;
+	text-align: center;
+	color:white;
+	font-size: 350%;
+	font-family: 'Ubuntu', sans-serif;
+	background-color: #3E82AD;
+	border: solid 2px #ccc;
+	
 }
 	
 #content{
-	margin-left:200px;
 	width:960px;
 	height:100%;
 }
