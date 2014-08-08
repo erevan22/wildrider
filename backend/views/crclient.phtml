@@ -1,39 +1,31 @@
 
-		<div>
-			<h4>Gestion du Backend CLIENT </h4>
+		<h4>Gestion du Backend CLIENT </h4>
 		<div class="creationclt">
 		
-		<form name="" id="" action="index.php" method="post" >
+		<form name="" id="" action="backend.php" method="post" >
 		
 			<fieldset>
 			       <legend>Coordonnées client</legend> <!-- Titre du fieldset -->
-			 
-			       <p><strong>Civilité:</strong>
-			     <label for="label"></label>
-			<br />
-			       <label for="Mr"></label>
-			       <input type="radio" name="civilité" value="Mr" id="Mr" />
-			       <label for="label">Mr</label>
-			<br />
-			       <label for="Mme">
-			       <input type="radio" name="civilité" value="Mme" id="Mme" />
-			       Mme</label><br />
-			       <input type="radio" name="civilité" value="Mlle" id="Mlle" /> <label for="Mlle">Mlle</label><br />
-			  </p>
+			 	<LABEL for="civ">Civilité</label>
+			    <SELECT name="nom" size="1">
+						<OPTION>Mr
+						<OPTION>Mme
+						<OPTION>Mlle
+				</SELECT>
 			 
 			<p><label><strong>Nom </strong>:</label>
-			<input type="text" name="nom" id="nom" value="" /></p>
+			<input type="text" name="nom" id="nom" value="" required /></p>
 			<p><label><strong>Pr&eacute;nom</strong> :</label>
-			  <input type="text" name="prenom" id="prenom" value="" />
+			  <input type="text" name="prenom" id="prenom" required value="" />
 			</p>
 			<p><label><strong>Date de naisssance</strong> :</label>
-			  <input type="text" name="birthday" id="birthday" value="" size="10" />
+			  <input type="text" name="birthday" required id="birthday" value="" size="10" />
 			</p>
 			<p><label><strong>Téléphone : </strong></label>
-			<input name="tel" type="text" id="nom" value="" size="10" />
+			<input name="tel" type="text" id="nom" required value="" size="10" />
 			</p>
 			</fieldset>
-			<input type="submit" name="valider" id="valider" value="Enregistrer" />
+			<input type="submit" href="backend.php" name="enr_clt" id="valider" value="Enregistrer" />
 		</form>
 			 
 			 
