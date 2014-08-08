@@ -132,4 +132,8 @@ h1.logo
 {
 	border: 1px solid #000000;
 }
+#bloc-sous-menu-moto
+{
+	display: none;
+}
 /* End: Menu */
