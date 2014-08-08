@@ -1,22 +1,13 @@
 <?php
-	if(!isset($_GET["page"]))
+	switch($page)
 	{
-		$_GET["page"] = "";
-	}
-
-	switch ($_GET["page"])
-	{
-		case 'variable':
-			# code...
+		case "login":
+			$url = "app/client/app.login_client.php";
 			break;
 		default:
-<<<<<<< HEAD
-			
-=======
-
->>>>>>> 569550be79bf584407a706274b4d5a5d7e4f468b
+			$url = "app/app.section.php";
 			break;
 	}
-	
+
 	require("view/view.skeleton.phtml");
 ?>

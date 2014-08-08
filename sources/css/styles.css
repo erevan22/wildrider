@@ -14,7 +14,20 @@ body
 	font-family: sans-serif;
 	margin: 8px;
 }
-
+a
+{
+	color: inherit;
+	text-decoration: inherit;
+}
+a:active img
+{
+	border: none;
+}
+a:hover
+{
+	color: inherit;
+	text-decoration: inherit;
+}
 /* Start: Réglages des div */
 .content
 {
@@ -27,7 +40,7 @@ body
 .shop-header
 {
 	height: 164px;
-	padding: 8px 8px 0;
+	padding: 0px 24px 0px 24px;
 }
 .shop-left-side, .shop-right-side, .shop-section
 {
@@ -51,6 +64,7 @@ body
 }
 .shop-footer
 {
+	display: block;
 	/*height: 96px;*/
 }
 #logo-header
@@ -63,6 +77,7 @@ body
 {
 	float: right;
 	width: 256px;
+	margin: 8px 0px 0px 0px;
 }
 #language-selector
 {
@@ -94,6 +109,12 @@ body
 {
 	height: 240px;
 	width: 120px;
+}
+.formulaires-connexion
+{
+	float: left;
+	width: 48%;
+	margin: 4px;
 }
 /* End: Réglages des div */
 
@@ -137,3 +158,23 @@ h1.logo
 	display: none;
 }
 /* End: Menu */
+
+/* Start : Formulaires */
+.right-align
+{
+	margin: 8px 0 0 104px;
+	position: relative;
+}
+.input-object
+{
+	display: block;
+}
+.fieldset-text{
+	font-size: 10pt;
+}
+.formulaires-label
+{
+	font-size: 8pt;
+	font-style: italic;
+}
+/* End : Formulaires */

@@ -1,10 +1,102 @@
-<form method="post" action="traitement.php">
-	<label for="nom">Entrez votre nom </label><input type="text" name="f_nom" id="nom" />
-	<label for="prenom">Entrez votre prenom </label><input type="text" name="f_prenom" id="prenom" />
-	<label for="e-mail">Entrez votre e-mail </label><input type="email" name="f_email" id="email" required="email"/>
-	<label for="prenom">Entrez votre telephone </label><input type="text" name="f_telephone" id="telephone" />
-	<label for="login">Entrez votre Login </label><input type="text" name="f_login" id="login" />
-	<label for="motdepass"width 45px; >Entrez votre mot de passe </label><input type="password" name="f_motdepass" /><input type="submit" value="Envoyer" />
-</form>
+<div class="span6 formulaires-connexion">
+	<!-- Connexion client connu -->
+	<form class="form-horizontal">
+		<fieldset>
+			<legend class="fieldset-text">Accéder à mon espace client</legend>
+			<div class="control-group">
+				<div class="controls">
+					<label class="formulaires-label" for="f_pseudo">Pseudo</label>
+					<div class="controls">
+						<input class="input-object" type="text" name="f_pseudo" placeholder="Votre pseudo&hellip;" required>
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="controls">
+					<label class="formulaires-label" for="f_password">Mot de passe</label>
+					<div class="controls">
+						<input class="input-object" type="password" name="f_password" required>
+					</div>
+				</div>
+			</div>
 
-<a href="#"> aller vers l ancre</a>
+			<div class="control-group">
+				<div class="controls">
+					<input type="submit" class="btn btn-primary btn-mini right-align" value="Connexion">
+				</div>
+			</div>
+		</fieldset>
+	</form>
+</div>
+
+
+<div class="span6 formulaires-connexion">
+	<!-- Enregistrement nouveau client -->	
+	<form class="form-horizontal">
+		<fieldset>
+			<legend class="fieldset-text">Nouveau client</legend>
+			<div class="control-group">
+				<div class="controls">
+					<label class="formulaires-label" for="f_nom">Nom</label>
+					<div class="controls">
+						<input class="input-object" type="text" name="f_nom" placeholder="Nom&hellip;" required>
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="controls">
+					<label class="formulaires-label" for="f_prenom">Prénom</label>
+					<div class="controls">
+						<input class="input-object" type="text" name="f_prenom" placeholder="Votre pseudo&hellip;" required>
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="controls">
+					<label class="formulaires-label" for="f_login">Login</label>
+					<div class="controls">
+						<input class="input-object" type="text" name="f_login" placeholder="Votre pseudo&hellip;" required>
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="controls">
+					<label class="formulaires-label" for="f_adresse">Adresse</label>
+					<div class="controls">
+						<input class="input-object" type="text" name="f_adresse" placeholder="Votre pseudo&hellip;" required>
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="controls">
+					<label class="formulaires-label" for="f_cp">Code Postal</label>
+					<div class="controls">
+						<input class="input-object" type="text" name="f_cp" placeholder="Votre pseudo&hellip;" required>
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="controls">
+					<label class="formulaires-label" for="f_ville">Ville</label>
+					<div class="controls">
+						<input class="input-object" type="text" name="f_ville" placeholder="Votre pseudo&hellip;" required>
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="controls">
+					<label class="formulaires-label" for="f_password">Mot de passe</label>
+					<div class="controls">
+						<input class="input-object" type="password" name="f_password" required>
+					</div>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<div class="controls"><br />
+					<input type="submit" class="btn btn-primary btn-mini right-align" value="Connexion">
+				</div>
+			</div>
+		</fieldset>
+	</form>
+</div>
