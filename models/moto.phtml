@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>moto</title>
+</head>
+<body>
+<table border="1">
+	<tr>
+		<th>Nom</th>
+		<th>Cylindré</th>
+		<th>Couleur</th>
+		<th>Année</th>
+		<th>Kilomètrage</th>
+	</tr>
+	<tr>
+		<td><?=$nomoto->getNomoto()?></td>
+		<td><?=$cylindre->getCylindre()?></td>
+		<td><?=$couleur->getCouleur()?></td>
+		<td><?=$annee->getAnnee()?></td>
+		<td><?=$kilometrage->getKilometrage()?></td>
+	</tr>
+</table>	
+</body>
+</html>
+
+<!--nommoto;
+	private $id;
+	private $couleur;
+	private $occasion;
+	private $cylindre;
+	private $neuf;
+	private $error = false;
+	private $annee;
+	private $kilomètrage;
