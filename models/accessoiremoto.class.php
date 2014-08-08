@@ -1,6 +1,20 @@
 <?php
 class Accessoiremoto
 {
+<<<<<<< HEAD
+	private $reference;
+	public function __construct($reference)
+{
+
+	echo "reference";
+	parent::__construct();
+	$this->setReference($reference);
+
+}
+public function getReference(){
+
+	return $this->reference;
+=======
 	private $cylindre;
 public function __construct($cylindre)
 {
@@ -13,6 +27,7 @@ public function __construct($cylindre)
 public function getCylindre(){
 
 	return $this->cylindre;
+>>>>>>> 026f1a903d3a4bb5ff9b18d81a0bc50f538c42de
 }
 public function setCylindre($cylindre)
 {
@@ -23,3 +38,7 @@ public function setCylindre($cylindre)
 
 }
 }
+<<<<<<< HEAD
+S
+=======
+>>>>>>> 026f1a903d3a4bb5ff9b18d81a0bc50f538c42de
