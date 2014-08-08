@@ -1,5 +1,5 @@
 <?php
-class User
+class Client
 {
 	private $id;
 	private $login;
@@ -22,7 +22,7 @@ class User
 		if (filter_var($email, FILTER_VALIDATE_EMAIL))
 			$this->email = $email;
 	}
-	public function settel($tel)
+	public function setTel($tel)
 	{
 		if (strlen($tel) > 2)
 			$this->tel = $tel;
