@@ -14,9 +14,8 @@
 			<div id="customer-zone"><?php require("app/app.customer.area.php"); ?></div>
 			<div id="search-zone"><?php require("app/app.search.php") ?></div>
 		</div>
-
-		</div>
 	</header>
+
 	<nav>
 		<div class="span3 shop-left-side">
 			<?php require("app/client/app.bloc-client.php"); ?>
@@ -24,9 +23,15 @@
 			<?php require("app/cms/app.bloc-cms.php"); ?>
 		</div>
 	</nav>
+	
 	<section>
-		<div class="span6 shop-section">require("section")</div>
+		<div class="row-fluid">
+				<div class="shop-section">
+					<?php require("app/app.section.php"); ?>
+				</div>
+		</div>
 	</section>
+
 	<aside>
 		<div class="span3 shop-right-side"><?php require("app/app.bloc-aside.php"); ?></div>
 	</aside>
