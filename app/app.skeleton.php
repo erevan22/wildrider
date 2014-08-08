@@ -10,7 +10,11 @@
 			# code...
 			break;
 		default:
+<<<<<<< HEAD
 			
+=======
+
+>>>>>>> 569550be79bf584407a706274b4d5a5d7e4f468b
 			break;
 	}
 	

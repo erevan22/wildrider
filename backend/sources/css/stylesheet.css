@@ -65,7 +65,6 @@ label{
 	display: block;
 	width: 150px;
 	float: left;
-	color: white;
 }
 
 #quitter{
@@ -75,4 +74,8 @@ label{
 
 #creerClient{
 	display:none;
+}
+
+.creationclt{
+	margin: 0 auto;
 }
