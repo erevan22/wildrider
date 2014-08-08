@@ -8,8 +8,8 @@ class Client
 	private $telephone;
 	private $birthdate;
 	private $error = false;
-	private $erreurlogin="";
-	private $erreurpassword="";
+	private $erreurnom="";
+	private $erreurprenom="";
 	private $erreuremail="";
 	private $erreurdate=""; 
 
@@ -19,8 +19,8 @@ class Client
 		{
 			if (isset($post['nom'], $post['prenom'], $post['email'], $post['birthdate']))
 			{
-				$this->setLogin($post['nom']);
-				$this->setPassword($post['prenom']);
+				$this->setNom($post['nom']);
+				$this->setPrenom($post['prenom']);
 				$this->setEmail($post['email']);
 				$this->setBirthdate($post['birthdate']);
 			}
@@ -28,33 +28,42 @@ class Client
 				$this->error = true;
 		}
 	}
+	
 	public function setNom($nom)
 	{
-		if (strlen($login) > 2)
-			$this->login = $login;
-		
-			else
-				$this->error = true;
-			$erreurlogin="Nom incorrect";
-		
-	}
-	public function setPrenom($prenom)
-	{
-		if (strlen($nom) > 5)
+		if (strlen($nom) > 2)
 			$this->nom = $nom;
 		
 			else
-				$this->error = true;
-			$erreurpassword="Prénom incorrect";
+			{
+			$this->error = true;
+			$erreurnom="Nom incorrect";
+			}
 	}
+	
+	public function setPrenom($prenom)
+	{
+		if (strlen($prenom) > 5)
+			$this->prenom = $prenom;
+		
+			else
+			{
+			$this->error = true;
+			$erreurpassword="Prénom incorrect";
+			}
+	}
+
 	public function setEmail($email)
+	
 	{
 		if (filter_var($email, FILTER_VALIDATE_EMAIL))
 			$this->email = $email;
 		
 			else
-				$this->error = true;
+			{
+			$this->error = true;
 			$erreuremail="e-mail incorrect";
+			}
 		
 	}
 	public function setBirthdate($birthdate)//Format : JJ/MM/YYYY
@@ -66,17 +75,19 @@ class Client
 				$this->birthdate = $birthdate;
 			}
 			else
-				$this->error = true;
+			{
+			$this->error = true;
 			$erreurdate="Date de naissance incorrecte";
-			}			
+			}
+		}			
 	}
 	public function getNom()
 	{
-		return $this->login;
+		return $this->nom;
 	}
 	public function getPrenom()
 	{
-		return $this->password;
+		return $this->prenom;
 	}
 	public function getEmail()
 	{
@@ -90,10 +101,7 @@ class Client
 	{
 		return $this->telephone;
 	}
-	public function verifPassword($password)
-	{
-		return ($this->password == md5($password));
-	}
+	
 	public function isOK()
 	{
 		return $this->error == false;
