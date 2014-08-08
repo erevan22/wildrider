@@ -16,6 +16,23 @@
 		<!-- Scripts -->
 		<script src="sources/js/jquery.js"></script>
 		<script src="sources/css/bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript">
+		/* Fonction pour le détail des compétences et expériences */
+			function afficher_detail(id_source, id_cible)
+			{
+				if($("#" + id_source).text() == "[-] " )
+				{
+					$("#" + id_source).html("[+] ");
+					$("#" + id_cible).css("display", "none");
+				}
+				else
+				{
+					$("#" + id_source).html("[-] ");
+					$("#" + id_cible).css("display","inline");
+					$("#" + id_cible).css("data-type", "Masquer le détail");
+				}
+			}
+		</script>
 	</head>
 
 	<body>
