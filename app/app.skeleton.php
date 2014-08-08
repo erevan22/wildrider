@@ -10,7 +10,7 @@
 			# code...
 			break;
 		default:
-			header("location: ./")
+
 			break;
 	}
 	
