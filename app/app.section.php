@@ -1,3 +1,5 @@
 <?php
-	require("view/view.section.phtml");
+	
 ?>
+
+Page d'accueil
