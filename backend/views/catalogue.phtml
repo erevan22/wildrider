@@ -1,7 +1,8 @@
 	<div id="produits">  <!-- produits -->
 		<table class="table" width="100%">
   		<tr>
-		    <th>Nom Produit</th>
+		    <th>Référence </th>
+        <th>Nom Produit</th>
     		<th>Description</th>
     		<th>Prix</th>
     		<th>Photo</th>
@@ -17,8 +18,9 @@
 			{?>
         
          <tr>
+          <td><?php echo $produits[$i]['refpdt']?></td>
           <td><?php echo $produits[$i]['nom']?></td>
-          <td><?php echo $produits[$i]['desc']?></td>
+          <td><?php echo $produits[$i]['description']?></td>
           <td><?php echo $produits[$i]['prix']?></td>
           
           <td><?php echo "<img src=".$repimage.$produits[$i]['image'].".jpg width='200' height='100' alt='photo'>"?></td>     

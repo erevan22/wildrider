@@ -1,4 +1,51 @@
 	<div id="det_produit">  <!-- produits -->
     
+
+    <form action="backend.php?page=modif_produit" method="POST" >
+		
+			<fieldset>
+			    <legend>Détail Produit</legend> <!-- Titre du fieldset -->
+				<input type="hidden" name="idprod" id="idprod" 
+				value="<?php echo $produits[0]['id_produit']; ?>" required /></p>
+
+				<p><label><strong>Référence prodouit</strong>:</label>
+				<input type="text" name="refpdt" id="nom" 
+				value="<?php echo $produits[0]['refpdt']; ?>" required /></p>
+
+				<p><label><strong>Nom</strong>:</label>
+				<input type="text" name="nom" id="nom" 
+				value="<?php echo $produits[0]['nom']; ?>" required /></p>
+				
+				<p><label><strong>Description</strong>:</label>
+				<input type="text" name="description" id="nom" 
+				value="<?php echo $produits[0]['description']; ?>" required /></p>
+
+				<p><label><strong>Catégorie</strong>:</label>
+				<input type="text" name="categorie" id="nom" 
+				value="<?php echo $produits[0]['categorie']; ?>" required /></p>
+				
+				<p><label><strong>Sous-catégorie</strong>:</label>
+				<input type="text" name="sscat" id="nom" 
+				value="<?php echo $produits[0]['sscategorie']; ?>" required /></p>
+
+				<p><label><strong>Prix</strong>:</label>
+				<input type="text" name="prix" id="prix" 
+				value="<?php echo $produits[0]['prix']; ?>" required /></p>
+				
+				<p><label><strong>Couleur</strong>:</label>
+				<input type="text" name="couleur" id="couleur" 
+				value="<?php echo $produits[0]['couleur']; ?>" required /></p>
+
+				<p><label><strong>Image</strong>:</label>
+				
+				<?php echo "<img src=sources/images/catalogue/".$produits[0]['image'].".jpg width='400' height='400' alt='photo'>"?>
+
+
+			</fieldset>
+
+			<input type="submit" name="modif_produit" id="valider" value="Modifer" />
+		</form>
+
+
 	</div>
 
