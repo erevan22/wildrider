@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Aug 08, 2014 at 03:46 PM
+-- Generation Time: Aug 11, 2014 at 09:57 AM
 -- Server version: 5.5.37-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4
 
@@ -117,8 +117,23 @@ CREATE TABLE IF NOT EXISTS `t_produit` (
   `categorie` smallint(6) NOT NULL,
   `sscategorie` smallint(6) NOT NULL,
   `couleur` varchar(50) COLLATE utf8_bin NOT NULL,
+  `image` varchar(255) COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`id_produit`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=9 ;
+
+--
+-- Dumping data for table `t_produit`
+--
+
+INSERT INTO `t_produit` (`id_produit`, `nom`, `desc`, `prix`, `categorie`, `sscategorie`, `couleur`, `image`) VALUES
+(1, 'MOTO1', 'SUPER MOTO 1', 3000, 0, 0, 'Gris', '1'),
+(2, 'MOTO2', 'SUPER MOTO 2', 6000, 0, 0, 'Rouge', '2'),
+(3, 'MOTO3', 'SUPER MOTO 3', 6000, 0, 0, 'Blanc', '3'),
+(4, 'MOTO4', 'SUPER MOTO 4', 6000, 0, 0, 'Blanc', '4'),
+(5, 'MOTO5', 'SUPER MOTO 4', 6000, 0, 0, 'Vert', '5'),
+(6, 'MOTO5', 'SUPER MOTO 6', 6000, 0, 0, 'Marron', '6'),
+(7, 'MOTO7', 'SUPER MOTO 6', 6000, 0, 0, 'Noir', '7'),
+(8, 'MOTO7', 'SUPER MOTO 6', 6000, 0, 0, 'Jaune', '8');
 
 -- --------------------------------------------------------
 

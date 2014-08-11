@@ -12,7 +12,6 @@ if (isset($_POST['quitter']))
 
 else if	 (isset($_GET['page']))
 {
-	echo "client";
 	$page = $_GET['page'];
 	
 }

@@ -1,34 +1,39 @@
 
 		<div class="creationclt">
 		
-		<form name="" id="" action="backend.php" method="post" >
+		<form action="apps/controle_client.php" method="POST" >
 		
 			<fieldset>
-			       <legend>Coordonnées client</legend> <!-- Titre du fieldset -->
-			 	<LABEL for="civ">Civilité</label>
-			    <SELECT name="nom" size="1">
+			    <legend>Coordonnées client</legend> <!-- Titre du fieldset -->
+			 	<LABEL for="civ">Civilité:</label>
+			    <SELECT name="civilite">
 						<OPTION>Mr
 						<OPTION>Mme
 						<OPTION>Mlle
 				</SELECT>
-			
-			
-			<p><label><strong>Nom </strong>:</label>
-			<input type="text" name="nom" id="nom" value="" required /></p>
-			<p><label><strong>Pr&eacute;nom</strong> :</label>
-			  <input type="text" name="prenom" id="prenom" required value="" />
-			</p>
-			<p><label><strong>Email</strong> :</label>
-			  <input type="text" name="email" required id="birthday" value="" size="10" />
-			</p>
-			<p><label><strong>Téléphone : </strong></label>
-			<input name="tel" type="text" id="nom" required value="" size="10" />
-			</p>
-			<p><label><strong>Date de naisssance</strong> :</label>
-			  <input type="text" name="birthday" required id="birthday" value="" size="10" />
-			</p>
+
+				<p><label><strong>Nom</strong>:</label>
+				<input type="text" name="nom" id="nom" value="" required /></p>
+
+				<p><label><strong>Pr&eacute;nom</strong> :</label>
+				  <input type="text" name="prenom" id="prenom" required value="" />
+				</p>
+
+				<p><label><strong>Email</strong> :</label>
+				  <input type="text" name="email" required id="birthday" value="" size="10" />
+				</p>
+
+				<p><label><strong>Téléphone : </strong></label>
+				<input name="tel" type="text" id="nom" required value="" size="10" />
+				</p>
+
+				<p><label><strong>Date de naisssance</strong> :</label>
+				  <input type="text" name="birthday" required id="birthday" value="" size="10" />
+				</p>
+
 			</fieldset>
-			<input type="submit" href="crclient.php" name="creerclient" id="valider" value="Enregistrer" />
+
+			<input type="submit" name="creerclient" id="valider" value="Enregistrer" />
 		</form>
 			 
 			 
