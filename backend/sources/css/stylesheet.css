@@ -61,7 +61,7 @@ body{
 	border: solid 1px #ccc;
 }
 
-label{
+p label{
 	display: block;
 	width: 150px;
 	float: left;
@@ -79,3 +79,27 @@ label{
 .creationclt{
 	margin: 0 auto;
 }
+
+nav{
+	margin-left: 42px;
+}
+
+#logo{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+th {
+	font-weight: bold;
+	background-color: gray;
+	font-size: 20px;
+}
+
+#produits {
+	margin-left: 40px;
+	margin-top: 20px;
+	border:2px solid #ccc;
+}
+
+
