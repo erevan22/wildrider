@@ -22,11 +22,22 @@ if (isset($_POST['modif_produit']))
 		$refproduit  = $_POST['refpdt'];
 		$nomproduit  = $_POST['nom'];
 		$description = $_POST['description'];
-		
+		$prix = $_POST['prix'];
+		$categorie = $_POST['categorie'];
+		$sscategorie = $_POST['sscat'];
+		$couleur = $_POST['couleur'];
+
+
+		//ordre de mise à jour
 		$req = "UPDATE t_produit SET 
 		 refpdt = '".$refproduit."',
 		 nom = '".$nomproduit."',
-		 description = '".$description."' 
+		 description = '".$description."',
+		 prix = '".$prix."',
+		 categorie = '".$categorie."',
+		 sscategorie = '".$sscategorie."',
+		 couleur = '".$couleur."'
+
 		 WHERE id_produit = '".$produit."'";
 		$res = mysqli_query($db, $req);
 
