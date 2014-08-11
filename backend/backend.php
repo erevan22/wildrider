@@ -6,6 +6,7 @@ require("sources/config/app.parametresbe.php");
 $access = array('accueil', 'client', 'categorie', 'produit', 'fournisseur','sscat');
 $error = '';
 $page = 'accueil';
+$produit = 0;
 
 if (isset($_POST['quitter']))
 	exit();
@@ -13,7 +14,7 @@ if (isset($_POST['quitter']))
 else if	 (isset($_GET['page']))
 {
 	$page = $_GET['page'];
-	
+
 }
 require('apps/skel.php');
 

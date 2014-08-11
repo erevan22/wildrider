@@ -26,6 +26,7 @@ if	 (isset($_GET['produit'])) // choix d'un produit détail à afficher
 	$id_produit = $_GET['produit'];
 	echo "id produit = ".$id_produit;
 	$page="det_produit";
+	require('apps/skel.php');
 	
 }	
 

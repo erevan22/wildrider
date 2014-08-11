@@ -177,4 +177,8 @@ h1.logo
 	font-size: 8pt;
 	font-style: italic;
 }
+
+nav{
+	margin-left: 50px;
+}
 /* End : Formulaires */
