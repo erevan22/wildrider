@@ -4,13 +4,23 @@
 	$db_connexion_error .=' Connexion &agrave; la base de donn&eacute;es impossible</h1>';
 
 	$titre_application = "Wild Rider";
+	
+	// Infos légales
+	$wr_adresse     = "1, Rue Pole Position";
+	$wr_code_postal = "58470";
+	$wr_ville       = "MAGNY COURS";
+	$wr_telephone   = "04 05 06 07 08";
+	$wr_fax         = "04 05 06 07 09";
+	$wr_site_web    = "www.wild-rider.fr";
+	$wr_mail        = "contact@wild-rider.fr";
 
-	// Développeur
+	// Développeurs
 	$developper1 = "Sarah" ;
 	$developper2 = "Armand";
 	$developper3 = "Jean-Claude";
 	$developper4 = "Stephan";
 
+	// Infos application
 	$copy        = "&copy; 2014";
 	$version     = "1.00.000 &beta;"
 ?>

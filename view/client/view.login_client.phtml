@@ -7,7 +7,7 @@
 				<div class="controls">
 					<label class="formulaires-label" for="f_pseudo">Pseudo</label>
 					<div class="controls">
-						<input class="input-object" type="text" name="f_pseudo" placeholder="Votre pseudo&hellip;" required>
+						<input class="input-object connexion_client" type="text" name="f_pseudo" placeholder="Votre pseudo&hellip;" required />
 					</div>
 				</div>
 			</div>
@@ -15,14 +15,14 @@
 				<div class="controls">
 					<label class="formulaires-label" for="f_password">Mot de passe</label>
 					<div class="controls">
-						<input class="input-object" type="password" name="f_password" required>
+						<input class="input-object connexion_client" type="password" name="f_password" required />
 					</div>
 				</div>
 			</div>
 
 			<div class="control-group">
 				<div class="controls">
-					<input type="submit" class="btn btn-primary btn-mini right-align" value="Connexion">
+					<input type="submit" class="btn btn-primary btn-mini right-align" value="Connexion" />
 				</div>
 			</div>
 		</fieldset>
@@ -39,7 +39,7 @@
 				<div class="controls">
 					<label class="formulaires-label" for="f_nom">Nom</label>
 					<div class="controls">
-						<input class="input-object" type="text" name="f_nom" placeholder="Nom&hellip;" required>
+						<input class="input-object inscription_client" type="text" name="f_nom" placeholder="Nom&hellip;" required />
 					</div>
 				</div>
 			</div>
@@ -47,7 +47,7 @@
 				<div class="controls">
 					<label class="formulaires-label" for="f_prenom">Prénom</label>
 					<div class="controls">
-						<input class="input-object" type="text" name="f_prenom" placeholder="Votre pseudo&hellip;" required>
+						<input class="input-object inscription_client" type="text" name="f_prenom" placeholder="Prénomo&hellip;" required />
 					</div>
 				</div>
 			</div>
@@ -55,31 +55,7 @@
 				<div class="controls">
 					<label class="formulaires-label" for="f_login">Login</label>
 					<div class="controls">
-						<input class="input-object" type="text" name="f_login" placeholder="Votre pseudo&hellip;" required>
-					</div>
-				</div>
-			</div>
-			<div class="control-group">
-				<div class="controls">
-					<label class="formulaires-label" for="f_adresse">Adresse</label>
-					<div class="controls">
-						<input class="input-object" type="text" name="f_adresse" placeholder="Votre pseudo&hellip;" required>
-					</div>
-				</div>
-			</div>
-			<div class="control-group">
-				<div class="controls">
-					<label class="formulaires-label" for="f_cp">Code Postal</label>
-					<div class="controls">
-						<input class="input-object" type="text" name="f_cp" placeholder="Votre pseudo&hellip;" required>
-					</div>
-				</div>
-			</div>
-			<div class="control-group">
-				<div class="controls">
-					<label class="formulaires-label" for="f_ville">Ville</label>
-					<div class="controls">
-						<input class="input-object" type="text" name="f_ville" placeholder="Votre pseudo&hellip;" required>
+						<input class="input-object inscription_client" type="text" name="f_login" placeholder="Choisissez un pseudo." required />
 					</div>
 				</div>
 			</div>
@@ -87,14 +63,37 @@
 				<div class="controls">
 					<label class="formulaires-label" for="f_password">Mot de passe</label>
 					<div class="controls">
-						<input class="input-object" type="password" name="f_password" required>
+						<input class="input-object inscription_client" type="password" name="f_password" required />
 					</div>
 				</div>
 			</div>
-
 			<div class="control-group">
-				<div class="controls"><br />
-					<input type="submit" class="btn btn-primary btn-mini right-align" value="Connexion">
+				<div class="controls">
+					<label class="formulaires-label" for="f_adresse">Adresse</label>
+					<div class="controls">
+						<input class="input-object inscription_client" type="text" name="f_adresse" placeholder="Adresse&hellip;" required />
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="controls">
+					<label class="formulaires-label" for="f_cp">Code Postal</label>
+					<div class="controls">
+						<input class="input-object" type="text" name="f_cp" placeholder="Code postal&hellip;" maxlength="5" required size="10" />
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="controls">
+					<label class="formulaires-label" for="f_ville">Ville</label>
+					<div class="controls">
+						<input class="input-object inscription_client" type="text" name="f_ville" placeholder="Ville&hellip;" required />
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="controls">
+					<input type="submit" class="btn btn-primary btn-mini right-align" value="S'inscrire" />
 				</div>
 			</div>
 		</fieldset>

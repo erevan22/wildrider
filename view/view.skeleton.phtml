@@ -4,13 +4,16 @@
 ?>
 
 <!-- Ossature de la boutique -->
-<div class="row">
+<div class="row main-content">
 	<header>
 		<div id="boutique-header" class="span12 shop-header">
 			<div id="logo-header">
 				<?php require("app/app.logo.php"); ?>
 			</div>
 			<div id="widget">
+				<div id="panier">
+					<?php require("app/panier/app.widget.panier.php") ?>
+				</div>
 				<div id="language-selector">
 					<?php require("app/app.language.selector.php"); ?>
 				</div>
@@ -23,41 +26,103 @@
 			</div>
 		</div>
 	</header>
-
-	<nav>
-		<div class="span3 shop-left-side">
+	<div class="span3 shop-left-side">
+		<nav>
 			<?php require("app/client/app.bloc-client.php"); ?>
 			<?php require("app/app.bloc-navigation.php"); ?>
 			<?php require("app/cms/app.bloc-cms.php"); ?>
-		</div>
-	</nav>
-	
+		</nav>
+	</div>	
 	<!-- Start : Ecran central -->
-	<section>
-		<div class="row-fluid">
+	<div class="span6">
+		<section>
 			<div class="shop-section">
 				<!-- Récupère l'url du fichier -->
 				<?php require($url); ?>
 			</div>
-		</div>
-	</section>
+		</section>
+	</div>
 	<!-- End : Ecran central -->
-
-	<aside>
-		<div class="span3 shop-right-side">
+	<div class="span3 shop-right-side">
+		<aside>
 			<?php require("app/app.bloc-aside.php"); ?>
-		</div>
-	</aside>
-
-<!-- 
+		</aside>
+	</div>
 </div>
-<div class="row-fluid">
 
- -->
-	<footer class="span12">
+<div class="row main-content reinsurance">
+	<div class="reinsurance-subdiv">
+		<table class="reinsurance-table">
+			<tr class="reinsurance-tr">
+				<td class="reinsurance-td-img">
+					<img src="sources/images/application/reinsurance_telephone.png" alt="Nous appeler au téléphone" />
+				</td>
+				<td class="reinsurance-table">
+					<?=$wr_telephone?> (Lu. de 15H00 à 18H00, du Ma. au Ve. de 10H00 à 18H00)
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	<div class="reinsurance-subdiv">
+		<table class="reinsurance-table">
+			<tr class="reinsurance-tr">
+				<td class="reinsurance-td-img">
+					<img src="sources/images/application/reinsurance_camionette.png" alt="Livraison en 48H00" />
+				</td>
+				<td class="reinsurance-table">
+					Livraison en 48H00
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	<div class="reinsurance-subdiv">
+		<table class="reinsurance-table">
+			<tr class="reinsurance-tr">
+				<td class="reinsurance-td-img">
+					<img src="sources/images/application/reinsurance_retour.png" alt="Retour possible" />
+				</td>
+				<td class="reinsurance-table">
+					Retrour possible, voir conditions au C.G.V.)
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	<div class="reinsurance-subdiv">
+		<table class="reinsurance-table">
+			<tr class="reinsurance-tr">
+				<td class="reinsurance-td-img">
+					<img src="sources/images/application/reinsurance_secure_payment.png" alt="" />
+				</td>
+				<td class="reinsurance-table">
+					Paiement 100% Sécurisé
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	<div class="reinsurance-subdiv">
+		<table class="reinsurance-table">
+			<tr class="reinsurance-tr">
+				<td class="reinsurance-td-img">
+					<img src="sources/images/application/reinsurance_euro.png" alt="" />
+				</td>
+				<td class="reinsurance-table">
+					Paiement en Euros
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<div class="row main-content">
+	<footer>
 		<div class="span12 shop-footer"><?php require("app/app.footer.php") ?></div>
 	</footer>
 </div>
+
 <?php
 	//Pied document HTML
 	require("app/document.footer.php");
