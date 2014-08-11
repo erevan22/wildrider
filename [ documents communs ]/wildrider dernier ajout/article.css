@@ -1,12 +1,16 @@
 body
 {
 	font: 100% sans-serif;
+	font-color: black;
 	font-family: "hawaii_loverregular";
+	background: url(images/fond-R6.jpg) no-repeat fixed center center;
+background-size: cover;
 }
 .content 
 {
 width: 100%;
 height: auto;
+
 }
 .tab-content
 {
