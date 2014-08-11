@@ -1,0 +1,36 @@
+body
+{
+	font: 100% sans-serif;
+	font-family: "hawaii_loverregular";
+}
+.content 
+{
+width: 100%;
+height: auto;
+}
+.tab-content
+{
+	float: right;
+	clear: both;
+	width: 500px;
+	height: auto;
+	margin-right: 10%;
+	
+}
+.img 
+{
+	float: left;
+	clear: both;
+	width: 600px;
+	height: auto;
+}
+h1
+{
+	margin-left: 20%;
+}
+
+div#messages img
+{
+	width: 500px;
+	height: auto;
+}
