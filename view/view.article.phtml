@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+    	<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+   		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    	<link href="../sources/css/bootstrap.css" rel="stylesheet">
+    	<link href="../sources/css/bootstrap-responsive.css" rel="stylesheet">
+    	<link rel="stylesheet" href="../sources/css/bootstrap-responsive.min.css" rel="stylesheet">
+    		<link rel="stylesheet" href="../sources/css/article.css">
+	<title>article</title>
+</head>
+<body>
+	<div class = "content">
+		
+		<div class="img">
+			<h1>YZF-R6 2014</h1>
+			
+		</div>
+
+	<ul class="nav nav-tabs" id="myTab">
+	  <li class="active"><a href="#home">Description</a></li>
+	  <li><a href="#profile">Fiche technique</a></li>
+	  <li><a href="#messages">Couleurs</a></li>
+	  <li><a href="#settings">Options</a></li>
+	</ul>
+ 
+	<div class="tab-content">
+		  <div class="tab-pane active" id="home">
+		  	<h3>Description</h3>
+		  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium numquam aliquid neque, nulla tempora ipsa excepturi hic voluptates a explicabo veritatis iure tenetur nam amet delectus quasi vel nobis saepe.</p>
+		  </div>
+		  <div class="tab-pane" id="profile">
+		  	<h3>Fiche technique</h3>
+		  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi sit velit vel illum, assumenda ex cupiditate voluptas, sunt placeat eaque consequuntur praesentium quibusdam iusto obcaecati. Reiciendis cumque officia dolorum assumenda.</p>
+		  </div>
+		  <div class="tab-pane" id="messages"> 
+		  	<img src="../sources/images/images/YAMAHA-YZF-R6-2014-3.jpg" alt="R6 noir"/>
+		  	<img src="../sources/images/images/YAMAHA-YZF-R6-2014-1.jpg" alt="R6 bleu"/><img src="..sources/images/images/R6 blanche.jpg" alt="R6 blanche"/>
+		  </div>
+		  <div class="tab-pane" id="settings">
+		  	<h3>Options</h3>
+		  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ipsum error nihil dolor accusantium in illum, tempore illo molestias ea, enim odio quo sunt praesentium inventore laudantium porro, totam est?</p>
+		  </div>
+			
+			<?php
+
+			$i=0;
+            $repimage="../wildrider/sources/images/catalogue/";
+      		while (isset($produits[$i]))
+			
+				/*mysqli_connect (" localhost", "root", "troiswa" ) or die ( mysql_error ());
+				mysqli_select_db ( "wildrider" ) or die ( mysql_error ()); 
+				$data = mysqli_query ("SELECT * FROM produit ORDER BY id desc" ) 
+				or die ( mysqli_error ( ' Aucun résultat ')); 
+				while ($info = mysqli_fetch_array ( $data) ) { 
+
+				$nom = $info [ 'nom' ] ; 
+				$description = $info [ 'description'] ; 
+				$prix = $info [' prix '] ; 
+				$categorie = $info['categorie'];
+				$sscategorie = $info['sscategorie'];
+				$couleur = $info['couleur'];
+				$image = $info['image'];
+				$refpdt = $info['refpdt'];
+			 */
+	
+			?>
+
+
+
+
+		 <div class="choix"> 
+		<FORM>
+		<INPUT type= "radio" name="couleur" value="noir"> Noir
+		<INPUT type= "radio" name="couleur" value="bleu"> Bleu
+		<INPUT type= "radio" name="couleur" value="blanc"> blanc
+		</FORM>
+ 		<h2>A partir de &euro; 12999</h2>
+		<button type="button" class="btn btn-primary" data-toggle="
+		button">Ajouter au panier</button>
+		</div>
+	</div>
+	</div>
+	
+	<script src="../source/js/jquery.js"></script>
+    <script src="../sources/css/bootstrap/js/bootstrap.js"></script>
+    <script src="../sources/css/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../sources/js/article.js"></script>
+	
+</body>
+</html>
