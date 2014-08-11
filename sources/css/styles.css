@@ -19,16 +19,27 @@ a
 	color: inherit;
 	text-decoration: inherit;
 }
-a:active img
+a:active, a:hover, a:link, a:visited
 {
 	border: none;
-}
-a:hover
-{
 	color: inherit;
 	text-decoration: inherit;
 }
-/* Start: Réglages des div */
+textarea
+{
+	resize: none;
+}
+/* Start : Customisations */
+.img-salut-motard
+{
+	transform: rotate(-16deg);
+	text-align: center;
+	width: 5%;
+	display: table-cell;
+}
+/* End : Customisations */
+
+/* Start : Réglages des div */
 .content
 {
 	border: 1px solid #000000;
@@ -36,6 +47,11 @@ a:hover
 	border-radius: 16px 16px 0 0;
 	margin: 0 auto;
 	width: 960px;
+}
+.main-content
+{
+	margin: 0;
+	padding: 4px;
 }
 .shop-header
 {
@@ -54,6 +70,7 @@ a:hover
 }
 .shop-left-side
 {
+	overflow: visible;
 }
 .shop-right-side
 {
@@ -65,7 +82,6 @@ a:hover
 .shop-footer
 {
 	display: block;
-	/*height: 96px;*/
 }
 #logo-header
 {
@@ -79,11 +95,38 @@ a:hover
 	width: 256px;
 	margin: 8px 0px 0px 0px;
 }
+#panier
+{
+	display: inline-block;
+	float: left;
+	height: 64px;
+	overflow: hidden;
+	text-align: center;
+	width: 192px;
+}
+span.panier-text
+{
+	display: inline-block;
+	font-size: 8pt;
+	font-weight: bold;
+		-webkit-transform: rotate(270deg);
+		-moz-transform: rotate(270deg);
+		-o-transform: rotate(270deg);
+	letter-spacing: 2px;
+}
+span.panier-nb-article
+{
+	color: #5CB85C;
+	font-size: 24pt;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
 #language-selector
 {
-	height: 32px;
+	display: inline-block;
+	height: 64px;
 	text-align: right;
-	width: 256px;
+	width: 64px;
 }
 #customer-zone, #search-zone
 {
@@ -101,8 +144,9 @@ a:hover
 }
 #customer-area, #left-menu, #cms-area, #aside-area, #promotion
 {
-	margin: 0 auto 8px;
-	min-width: 160px;
+	border-radius: 8px 8px 0 0;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+	margin: 4px auto 8px;
 	width: 90%;
 }
 .advertising
@@ -115,6 +159,64 @@ a:hover
 	float: left;
 	width: 48%;
 	margin: 4px;
+}
+.reinsurance
+{
+	border-top: 1px dotted #808080;
+}
+.reinsurance-subdiv
+{
+	display: inline-block;
+	float: left;
+	font-size: 8pt;
+	font-weight: bold;
+	vertical-align: 100%;
+	width: 20%;
+}
+#footer
+{
+	background: url('../images/application/footer_w960_h350.jpg');
+	height: 350px;
+	opacity: 0.5;
+	padding: 8px;
+}
+#footer-mentions-marginales
+{
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 16px;
+	display: block;
+	float: left;
+	height: 96%;
+	margin: 8px;
+	padding: 8px;
+	width: 64%;
+}
+#footer-contact
+{
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 16px;
+	display: block;
+	float: right;
+	height: 96%;
+	margin: 8px;
+	padding: 8px;
+	width: 32%;
+}
+.footer-sub-categorie
+{
+	display: inline-block;
+	float: left;
+	margin: 8px;
+	padding: 4px;
+	width: 30%;
+}
+.footer-sub-categorie-contact
+{
+	display: inline-block;
+	float: left;
+	margin: 8px;
+	padding: 4px;
+	width: 94%;
 }
 /* End: Réglages des div */
 
@@ -147,38 +249,114 @@ h1.logo
 /* Start: Menu */
 #menu-catalogue
 {
-	font-size: 9pt;
+	font-size: 10pt;
+	font-weight: bold;
 } 
-.bloc-sous-menu
+#menu-vertical, #menu-vertical ul
 {
-	border: 1px solid #000000;
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
 }
-#bloc-sous-menu-moto
+#menu-vertical li
 {
-	display: none;
+	padding: 4px;
+	position: relative;
+}
+#menu-vertical a
+{
+	display: block;
+	text-decoration: none;
+	color: #000000;
+}
+#menu-vertical a:hover
+{
+	background-color: #98FB98;
+}
+#menu-vertical ul
+{
+	position: absolute;
+	left:-999em;
+}
+/* #menu-vertical li ul */
+#menu-vertical li:hover ul
+{
+	background-color: #FFFFFF;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	left: 170px;
+	top: 2px;
 }
 /* End: Menu */
 
 /* Start : Formulaires */
 .right-align
 {
-	margin: 8px 0 0 104px;
+	margin: 8px 0 0 159px;
 	position: relative;
+	width: 96px;
 }
 .input-object
 {
 	display: block;
 }
-.fieldset-text{
-	font-size: 10pt;
+.fieldset-text-footer, .footer-text
+{
+	font-size: 9pt;
+	color: #FFFFFF;
+	margin-bottom: 0px;
+}
+.fieldset-text
+{
+	font-size: 9pt;
+	margin-bottom: 0px;
+}
+.footer-text-span
+{
+	font-size: 14pt;
+}
+.footer-heures-ouverture{
+	color: #FFFFFF;
+	font-size: 9pt;
 }
 .formulaires-label
 {
+	color: #FFFFFF;
 	font-size: 8pt;
 	font-style: italic;
 }
-
-nav{
-	margin-left: 50px;
-}
 /* End : Formulaires */
+
+/* Start : Bloc Reinsurance */
+.reinsurance-td-text
+{
+	height: 64px;
+	vertical-align: middle;
+}
+.reinsurance-td-img
+{
+	height: 64px;
+	width: 64px;
+}
+/* End : Bloc Reinsurance */
+
+/* Start: Eléments de formulaire */
+#f_footer_contact_mail
+{
+	width: 95%;
+}
+#f_footer_message_textarea
+{
+	width: 95%;
+}
+#f_footer_btn_envoyer
+{
+	margin: 8px 0 0 158px;
+}
+.connexion_client, .inscription_client
+{
+	width: 256px;
+}
+/* End: Eléments de formulaire */
+
+

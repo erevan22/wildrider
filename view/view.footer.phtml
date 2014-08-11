@@ -1,3 +1,67 @@
 <div id="footer">
-	Pied de page
+	<div id="footer-mentions-marginales">
+		<div class="footer-sub-categorie">
+			<fieldset><legend class="fieldset-text-footer">Paiements acceptés</legend>
+				<p class="footer-text">
+					Nous acceptons les moyens de paiement suivants&nbsp;:<br />
+					<span style="text-align: center;">
+						<img src="sources/images/application/paypal_paiements.png" /><br />&nbsp;<br />
+						<img src="sources/images/application/icone_cheque.png" />&nbsp;
+						<img src="sources/images/application/icone_euro.png" />
+				</p>
+		</div>
+		<div class="footer-sub-categorie">
+			<fieldset><legend class="fieldset-text-footer">Suivez-nous</legend>
+				<p class="footer-text">
+					Retrouvez notre actu sur&nbsp;:<br />
+					<img src="sources/images/application/icone_facebook.png" alt="Retrouvez-nous sur Facebook" />&nbsp;Facebook/wild-rider<br />
+					<img src="sources/images/application/icone_twitter.png" alt="Retrouvez nous sur Twiter" />&nbsp;Tweeter #wild-rider<br />
+					<img src="sources/images/application/icone_google_plus.png" alt="Retrouvez nous sur Google" />&nbsp;Google + - wild-rider<br />&nbsp;
+				</p>
+			</fieldset>
+			<fieldset><legend class="fieldset-text-footer">Infos légales</legend>
+				<p class="footer-text">
+					A propos&hellip;<br />
+					C.G.U.<br />
+					&copy; 2014 - 3WA, Promo 24<br />
+					Development Team<br />
+					<?=$developper1;?>,
+					<?=$developper2;?>,
+					<?=$developper3;?>,
+					<?=$developper4;?>
+				</p>
+			</fieldset>
+		</div>
+		<div class="footer-sub-categorie">
+			<fieldset><legend class="fieldset-text-footer">Nos coordonnées</legend>
+				<p class="footer-text">
+					<span class="footer-text-span"><?php echo $titre_application; ?></span><br />
+					<?php echo $wr_adresse; ?><br />
+					<?php echo $wr_code_postal." ".$wr_ville; ?><br />
+					<p class="footer-heures-ouverture">
+						Ouverture&nbsp;:<br />
+						Lu.de 15H00 à 19H30<br />
+						Ma. à Ve. de 10H00 à 19H30<br />
+						Sa. 10H00 à 18H00<br />
+						Fermé les dimanches.
+					</p>
+				</p>
+			</fieldset>
+		</div>
+	</div>
+	<div id="footer-contact">
+		<div class="footer-sub-categorie-contact">
+			<div id="footer_contact_us">
+				<?php require("app/app.form.contact.footer.php"); ?>
+			</div>
+			<p class="footer-heures-ouverture">
+				ou&nbsp;:<br />
+				<span style="letter-spacing: -1px;">
+					<img src="sources/images/application/icone_telephone.png" width="24" width="24" />&nbsp;<?php echo $wr_telephone; ?> / <img src="sources/images/application/icone_fax.png" width="24" width="24" />&nbsp;<?php echo $wr_fax; ?><br />
+				</span>
+				<img src="sources/images/application/icone_internet.png" width="24" width="24" />&nbsp;<a href="http://<?php echo $wr_site_web; ?>" target="_blank"><?php echo $wr_site_web; ?></a><br />
+				<img src="sources/images/application/icone_courrier.png" width="24" width="24" />&nbsp;<a href="mailto:<?php echo $wr_mail; ?>"><?php echo $wr_mail; ?></a>
+			</p>
+		</div>
+	</div>
 </div>
