@@ -1,0 +1,51 @@
+	<div id="det_produit">  <!-- produits -->
+    
+
+    <form action="backend.php?page=creer_produit" method="POST" >
+		
+			<fieldset>
+			    <legend>Nouveau Produit</legend> <!-- Titre du fieldset -->
+				<input type="hidden" name="idprod" id="idprod" 
+				value="" required /></p>
+
+				<p><label><strong>Référence prodouit</strong>:</label>
+				<input type="text" name="refpdt" id="nom" 
+				value="" required /></p>
+
+				<p><label><strong>Nom</strong>:</label>
+				<input type="text" name="nom" id="nom" 
+				value="" required /></p>
+				
+				<p><label><strong>Description</strong>:</label>
+				<input type="text" name="description" id="nom" 
+				value="" required /></p>
+
+				<p><label><strong>Catégorie</strong>:</label>
+				<input type="text" name="categorie" id="nom" 
+				value="" required /></p>
+				
+				<p><label><strong>Sous-catégorie</strong>:</label>
+				<input type="text" name="sscat" id="nom" 
+				value="" required /></p>
+
+				<p><label><strong>Prix</strong>:</label>
+				<input type="text" name="prix" id="prix" 
+				value="" required /></p>
+				
+				<p><label><strong>Couleur</strong>:</label>
+				<input type="text" name="couleur" id="couleur" 
+				value="" required /></p>
+
+				<p><label><strong>Image</strong>:</label>
+				
+				<input type="file" name="image" id="couleur" 
+				value="" /></p>				
+
+			</fieldset>
+
+			<input type="submit" name="creer_produit" id="valider" value="Créer produit" />
+		</form>
+
+
+	</div>
+
