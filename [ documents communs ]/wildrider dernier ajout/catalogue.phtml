@@ -1,0 +1,62 @@
+
+<div id="produits">  <!-- produits -->
+        <table class="table" width="100%">
+        <tr>
+            <th>Nom Produit</th>
+            <th>Description</th>
+            <th>Prix</th>
+            <th>Photo</th>
+            <th>Catégorie</th>
+            <th>Couleur</th>
+            <th>Détail</th>
+            <th>Supprimer</th>
+        </tr>
+        <?php
+            $i=0;
+            $repimage="sources/images/catalogue/";
+      while (isset($produits[$i]))
+            {?>
+        
+         <tr>
+          <td><?php echo $produits[$i]['nom']?></td>
+          <td><?php echo $produits[$i]['desc']?></td>
+          <td><?php echo $produits[$i]['prix']?></td>
+          
+          <td><?php echo "<img src=".$repimage.$produits[$i]['image'].".jpg width='200' height='100' alt='photo'>"?></td>     
+          
+          <td><?php echo $produits[$i]['categorie']?></td>
+          
+          <td><?php echo $produits[$i]['couleur']?></td>
+          
+          <td><a href="backend.php?page=det_produit&produit=<?php echo $produits[$i]['id_produit']?>"><img src="sources/images/detail.jpg" alt="detail" width="50" height="50"></a>
+          
+          <td><INPUT type="checkbox" name="nom" value="valeur attachée au bouton"></INPUT>
+          </tr>
+      <?php
+      $i++;
+      }
+    ?>
+        </table>
+    
+  
+
+        <form action='backend.php?page=crproduit' method='post'>
+                       
+        <input id="creerproduit" type="submit" class="btn pull-right" value="Cr&eacute;er client" name="creat_clt">
+        </form>
+
+    </div>
+    
+    <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#wildnav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a id="client" name="enrclt" href="backend.php?page=crclient" class="navbar-brand">==> creation produit</a>
+      </div>
+    </nav>

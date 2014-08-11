@@ -38,3 +38,8 @@ div#messages img
 	width: 500px;
 	height: auto;
 }
+.choix
+{
+	float: left;
+	clear: both;
+}
