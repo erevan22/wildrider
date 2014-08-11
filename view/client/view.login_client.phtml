@@ -32,14 +32,14 @@
 
 <div class="span6 formulaires-connexion">
 	<!-- Enregistrement nouveau client -->	
-	<form class="form-horizontal">
+	<form class="form-horizontal" action="app/client/app.login_client.php" method="POST">
 		<fieldset>
 			<legend class="fieldset-text">Nouveau client</legend>
 			<div class="control-group">
 				<div class="controls">
 					<label class="formulaires-label" for="f_nom">Nom</label>
 					<div class="controls">
-						<input class="input-object inscription_client" type="text" name="f_nom" placeholder="Nom&hellip;" required />
+						<input class="input-object inscription_client" type="text" name="f_nom" placeholder="Nom&hellip;" required onchange="nouveau_client();" maxlength="50" />
 					</div>
 				</div>
 			</div>
@@ -47,55 +47,98 @@
 				<div class="controls">
 					<label class="formulaires-label" for="f_prenom">Prénom</label>
 					<div class="controls">
-						<input class="input-object inscription_client" type="text" name="f_prenom" placeholder="Prénomo&hellip;" required />
+						<input class="input-object inscription_client" type="text" name="f_prenom" placeholder="Prénom&hellip;" required onchange="nouveau_client();" maxlength="50" />
 					</div>
 				</div>
 			</div>
-			<div class="control-group">
-				<div class="controls">
-					<label class="formulaires-label" for="f_login">Login</label>
+			<!-- S'affiche si le formulaire commence à etre rempli -->
+			<div id="suite-formulaire">
+				<div class="control-group">
 					<div class="controls">
-						<input class="input-object inscription_client" type="text" name="f_login" placeholder="Choisissez un pseudo." required />
+						<label class="formulaires-label" for="f_login">Login</label>
+						<div class="controls">
+							<input class="input-object inscription_client" type="text" name="f_login" placeholder="Choisissez un pseudo." required maxlength="50" />
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="control-group">
-				<div class="controls">
-					<label class="formulaires-label" for="f_password">Mot de passe</label>
+				<div class="control-group">
 					<div class="controls">
-						<input class="input-object inscription_client" type="password" name="f_password" required />
+						<label class="formulaires-label" for="f_password">Mot de passe</label>
+						<div class="controls">
+							<input id="pwd" class="input-object inscription_client" type="password" name="f_password" required />
+							<input id="pwd_confirm" class="input-object inscription_client" type="password" name="f_password_confirm" required title="Confirmez le mot de passe" onchange="verif_password();" />
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="control-group">
-				<div class="controls">
-					<label class="formulaires-label" for="f_adresse">Adresse</label>
+				<div class="control-group">
 					<div class="controls">
-						<input class="input-object inscription_client" type="text" name="f_adresse" placeholder="Adresse&hellip;" required />
+						<label class="formulaires-label" for="f_adresse">Adresse</label>
+						<div class="controls">
+							<input class="input-object inscription_client" type="text" name="f_adresse_1" placeholder="Adresse&hellip;" required maxlength="35" />
+							<input class="input-object inscription_client" type="text" name="f_adresse_2" placeholder="Adresse (Ligne 2)&hellip;" maxlength="35" />
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="control-group">
-				<div class="controls">
-					<label class="formulaires-label" for="f_cp">Code Postal</label>
+				<div class="control-group">
 					<div class="controls">
-						<input class="input-object" type="text" name="f_cp" placeholder="Code postal&hellip;" maxlength="5" required size="10" />
+						<label class="formulaires-label" for="f_cp">Code Postal</label>
+						<div class="controls">
+							<input class="input-object" type="text" name="f_cp" placeholder="Code postal&hellip;" maxlength="5" required size="10" />
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="control-group">
-				<div class="controls">
-					<label class="formulaires-label" for="f_ville">Ville</label>
+				<div class="control-group">
 					<div class="controls">
-						<input class="input-object inscription_client" type="text" name="f_ville" placeholder="Ville&hellip;" required />
+						<label class="formulaires-label" for="f_ville">Ville</label>
+						<div class="controls">
+							<input class="input-object inscription_client" type="text" name="f_ville" placeholder="Ville&hellip;" required maxlength="70" />
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="control-group">
-				<div class="controls">
-					<input type="submit" class="btn btn-primary btn-mini right-align" value="S'inscrire" />
+				<div class="control-group">
+					<div class="controls">
+						<label class="formulaires-label" for="f_mail">Email</label>
+						<div class="controls">
+							<input class="input-object inscription_client" type="text" name="f_mail" placeholder="Votre email&hellip;" required />
+							<input class="input-object inscription_client" type="text" name="f_mail_confirm" placeholder="Confirmez votre email&hellip;" required maxlength="255" />
+						</div>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="controls">
+						<label class="formulaires-label" for="f_ville">Téléphone</label>
+						<div class="controls">
+							<input class="input-object inscription_client" type="text" name="f_telephone" placeholder="Téléphone&hellip;" required maxlength="10" />
+						</div>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="controls">
+						<input type="submit" class="btn btn-primary btn-mini right-align" name="f_btn_new_client" value="S'inscrire" />
+					</div>
 				</div>
 			</div>
 		</fieldset>
 	</form>
 </div>
+
+<script>
+	function nouveau_client()
+	{
+		$("#suite-formulaire").css("display", "block");
+	}
+	function verif_password()
+	{
+		var password1 = document.getElementById("pwd").value;
+		var password2 = document.getElementById("pwd_confirm").value;
+
+		console.log(password1);
+		console.log(password2);
+
+		if(password1 != password2)
+		{
+			window.alert('Votre confirmation du mot de passe ne\ncorrespond pas au mot de passe initial.\n\nMerci de revalider');
+			document.getElementById("pwd_confirm").focus();
+		}
+	}
+</script>

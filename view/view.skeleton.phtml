@@ -18,7 +18,16 @@
 					<?php require("app/app.language.selector.php"); ?>
 				</div>
 				<div id="customer-zone">
-					<?php require("app/app.customer.area.php"); ?>
+					<?php
+						if($_SESSION["client_registrer"] == 0)
+						{
+							require("app/app.customer.area.php");
+						}
+						else
+						{
+							require("app/client/app.customer.logout.php");
+						}
+					?>
 				</div>
 				<div id="search-zone">
 					<?php require("app/app.search.php") ?>
@@ -28,7 +37,12 @@
 	</header>
 	<div class="span3 shop-left-side">
 		<nav>
-			<?php require("app/client/app.bloc-client.php"); ?>
+			<?php 
+				if($_SESSION["client_registrer"] == 1)
+				{
+					require("app/client/app.bloc-client.php");
+				}
+			?>
 			<?php require("app/app.bloc-navigation.php"); ?>
 			<?php require("app/cms/app.bloc-cms.php"); ?>
 		</nav>

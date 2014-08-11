@@ -321,9 +321,18 @@ h1.logo
 }
 .formulaires-label
 {
+	font-size: 8pt;
+	font-style: italic;
+}
+.formulaires-label-footer
+{
 	color: #FFFFFF;
 	font-size: 8pt;
 	font-style: italic;
+}
+#suite-formulaire
+{
+	display: none;
 }
 /* End : Formulaires */
 
