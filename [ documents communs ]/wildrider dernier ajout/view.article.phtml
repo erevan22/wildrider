@@ -44,13 +44,44 @@
 		  	<h3>Options</h3>
 		  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ipsum error nihil dolor accusantium in illum, tempore illo molestias ea, enim odio quo sunt praesentium inventore laudantium porro, totam est?</p>
 		  </div>
+			
+			<?php
+
+			$i=0;
+            $repimage="../wildrider/sources/images/catalogue/";
+      		while (isset($produits[$i]))
+			
+				/*mysqli_connect (" localhost", "root", "troiswa" ) or die ( mysql_error ());
+				mysqli_select_db ( "wildrider" ) or die ( mysql_error ()); 
+				$data = mysqli_query ("SELECT * FROM produit ORDER BY id desc" ) 
+				or die ( mysqli_error ( ' Aucun résultat ')); 
+				while ($info = mysqli_fetch_array ( $data) ) { 
+
+				$nom = $info [ 'nom' ] ; 
+				$description = $info [ 'description'] ; 
+				$prix = $info [' prix '] ; 
+				$categorie = $info['categorie'];
+				$sscategorie = $info['sscategorie'];
+				$couleur = $info['couleur'];
+				$image = $info['image'];
+				$refpdt = $info['refpdt'];
+			 */
+	
+			?>
+
+
+
+
+		 <div class="choix"> 
 		<FORM>
 		<INPUT type= "radio" name="couleur" value="noir"> Noir
 		<INPUT type= "radio" name="couleur" value="bleu"> Bleu
 		<INPUT type= "radio" name="couleur" value="blanc"> blanc
 		</FORM>
- 
-		<button type="button" class="btn btn-primary" data-toggle="button">Ajouter au panier</button>
+ 		<h2>A partir de &euro; 12999</h2>
+		<button type="button" class="btn btn-primary" data-toggle="
+		button">Ajouter au panier</button>
+		</div>
 	</div>
 	</div>
 	

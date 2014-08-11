@@ -5,7 +5,7 @@ class Produit
 	private $id_produit;
 	private $ref;
 	private $nom;
-	private $desc;
+	private $description;
 	private $prix;
 	private $categorie;
 	private $sscategorie;
@@ -23,7 +23,7 @@ class Produit
 				$this->setId_produit($post['id_produit']);
 				$this->setRef($post['ref']);
 				$this->setNom($post['nom']);
-				$this->setDesc($post['desc']);
+				$this->setDescription($post['description']);
 				$this->setPrix($post['prix']);
 				$this->setCategorie($post['categorie']);
 				$this->setSscategorie($post['sscategorie']);
@@ -57,11 +57,11 @@ class Produit
 				$this->error = true;
 			}
 	}
-	public function setDesc($desc)
+	public function setDescription($description)
 	{
-		if ($desc>5)
+		if ($description>5)
 		{
-				$this->desc = $desc;
+				$this->description = $description;
 		}
 		else
 		{
@@ -90,7 +90,7 @@ class Produit
 	{
 		return $this->monom;
 	}
-	public function getDesc()
+	public function getDescription()
 	{
 		return $this->desc;
 	}
